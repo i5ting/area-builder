@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>口红活动</title>
+    <script src="./js/zepto.js"></script>
+    <script src="./js/area.js"></script>
+    <script type="text/javascript">
+      // window.shop_debug = true;
+      var arr = [];
+      $(function(){
+        dsy.init($('.address-select'), arr, ["香港","澳门","台湾省"], true);
+      })
+    </script>
+ 
+  </head>
+  <body onload="" ontouchstart>
+    <div class="address-select">
+      <div class="form_item pull-left width_32 selectbutton custom-select">
+        <div class="xbm_select blue_select province_select">
+          <select style='font-size:17px;'><option>请选择省</option></select>
+          <span class="arrow1"></span>
+        </div>
+      </div>
+      <div class="form_item pull-left width_32 selectbutton custom-select">
+        <div class="xbm_select blue_select city_select">
+          <select style='font-size:17px;'><option>请选择市</option></select>
+          <span class="arrow1"></span>
+        </div>
+      </div>
+      <div class="form_item pull-left width_32 selectbutton custom-select">
+        <div class="xbm_select blue_select area_select">
+          <select style='font-size:17px;'><option>请选择区</option></select>
+          <span class="arrow1"></span>
+        </div>
+      </div>
+      <div class="form_item">
+        <textarea placeholder="请填写详细地址" class="weui_textarea textarea_remark detail_address"></textarea>
+      </div>
+    </div>
+  </body>
+</html>
